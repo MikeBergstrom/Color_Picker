@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Color Picker</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body style="background-color:rgb({{red}},{{green}},{{blue}}">
+    <div id="container">
+        <form action='/colors' method='GET'>
+            Red: <input type = 'text' name='red'>
+            Green: <input type = 'text' name='green'>
+            Blue: <input type='text' name ='blue'>
+            <input type="submit" value" value="Choose Color">
+            <p>*All Value must be between 1 and 255</p>
+    </div>
+</body>
