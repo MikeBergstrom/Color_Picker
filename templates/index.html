@@ -5,10 +5,17 @@
 <title>Color Picker</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--<script>
+    $(document).ready(function(){
+    
+    $("body").css("background-color", "rgb({{red}},{{green}},{{blue}})";
+    
+    )}
+</script>-->
 </head>
-<body style="background-color:rgb({{red}},{{green}},{{blue}}">
+<body style="background-color: rgb({{red}},{{green}},{{blue}})">
     <div id="container">
-        <form action='/colors' method='GET'>
+        <form action='/colors' method='POST'>
             Red: <input type = 'text' name='red'>
             Green: <input type = 'text' name='green'>
             Blue: <input type='text' name ='blue'>

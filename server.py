@@ -2,10 +2,10 @@ from flask import Flask, render_template, request, redirect
 app= Flask(__name__)
 
 @app.route('/')
-def index(red="0", green="0", blue="0"):
+def index(red="255", green="255", blue="255"):
     return render_template("index.html")
 
-@app.route('/colors', methods=['GET'])
+@app.route('/colors', methods=['POST'])
 def colors():
     print "Got GET Info"
 
